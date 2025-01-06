@@ -1,11 +1,13 @@
 .kiss {
     position: absolute;
-    font-size: 3rem; /* Besitos más grandes */
+    font-size: 4rem; /* Tamaño más grande */
     animation: flyKiss 3s linear forwards;
     pointer-events: none;
     z-index: 1000;
+    opacity: 1;
 }
 
+/* Animación para subir recto sin rotar */
 @keyframes flyKiss {
     0% {
         transform: translateX(-50%) translateY(0) scale(1);
@@ -13,7 +15,7 @@
     }
     50% {
         transform: translateX(-50%) translateY(-200px) scale(1.5);
-        opacity: 0.8;
+        opacity: 0.9;
     }
     100% {
         transform: translateX(-50%) translateY(-400px) scale(2);
