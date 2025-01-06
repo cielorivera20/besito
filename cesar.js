@@ -9,7 +9,7 @@ sendKissBtn.addEventListener('click', () => {
     // Posición inicial centrada abajo
     kiss.style.left = '50%';
     kiss.style.bottom = '0';
-    kiss.style.transform = 'translateX(-50%)';
+    kiss.style.transform = 'translateX(50%)';
 
     kissContainer.appendChild(kiss);
 
