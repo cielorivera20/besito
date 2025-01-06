@@ -1,10 +1,10 @@
 .kiss {
     position: absolute;
-    font-size: 12rem; /* Tamaño más grande */
-    animation: flyKiss 10s linear forwards;
+    font-size: 6rem; /* Tamaño más grande */
+    animation: flyKiss 6s linear forwards;
     pointer-events: none;
     z-index: 1000;
-    opacity: 2;
+    opacity: 1;
 }
 
 /* Animación para subir recto sin rotar */
@@ -16,8 +16,9 @@
     50% {
         transform: translateX(-50%) translateY(-200px) scale(1.5);
         opacity: 0.9;
-    }    100% {
-        transform: translateX(50%) translateY(400px) scale(2);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-400px) scale(2);
         opacity: 0;
     }
 }
