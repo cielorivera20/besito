@@ -16,8 +16,7 @@
     50% {
         transform: translateX(-50%) translateY(-200px) scale(1.5);
         opacity: 0.9;
-    }
-    100% {
+    }    100% {
         transform: translateX(50%) translateY(400px) scale(2);
         opacity: 0;
     }
