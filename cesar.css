@@ -1,7 +1,7 @@
 .kiss {
     position: absolute;
-    font-size: 6rem; /* Tamaño más grande */
-    animation: flyKiss 6s linear forwards;
+    font-size: 12rem; /* Tamaño más grande */
+    animation: flyKiss 10s linear forwards;
     pointer-events: none;
     z-index: 1000;
     opacity: 2;
