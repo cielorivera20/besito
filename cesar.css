@@ -1,0 +1,57 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Botón para enviar besito */
+#sendKissBtn {
+    background: #ff4d6d;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#sendKissBtn:hover {
+    background: #d62852;
+}
+
+/* Animación de besitos */
+.kiss {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatKiss 3s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatKiss {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) rotate(360deg);
+        opacity: 0;
+    }
+}
