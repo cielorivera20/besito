@@ -1,16 +1,15 @@
-// Referencia al botón y contenedor de besitos
 const sendKissBtn = document.getElementById('sendKissBtn');
 const kissContainer = document.getElementById('kissContainer');
 
-// Evento al hacer clic en el botón
 sendKissBtn.addEventListener('click', () => {
     const kiss = document.createElement('div');
     kiss.classList.add('kiss');
     kiss.innerText = '💋';
 
-    // Posición aleatoria
-    kiss.style.left = `${Math.random() * 100}vw`;
-    kiss.style.top = `${Math.random() * 100}vh`;
+    // Posición inicial fija en el centro inferior
+    kiss.style.left = '50%';
+    kiss.style.bottom = '0';
+    kiss.style.transform = 'translateX(-50%)';
 
     kissContainer.appendChild(kiss);
 
