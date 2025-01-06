@@ -6,10 +6,10 @@ sendKissBtn.addEventListener('click', () => {
     kiss.classList.add('kiss');
     kiss.innerText = '💋';
 
-    // Posición inicial centrada abajo
+    // Posición inicial fija en el centro inferior
     kiss.style.left = '50%';
     kiss.style.bottom = '0';
-    kiss.style.transform = 'translateX(50%)';
+    kiss.style.transform = 'translateX(-50%)';
 
     kissContainer.appendChild(kiss);
 
